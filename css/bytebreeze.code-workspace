@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "bytebreeze",
+			"path": ".."
+		},
+		{
+			"name": "images",
+			"path": "../../mining/images"
+		}
+	],
+	"settings": {}
+}
