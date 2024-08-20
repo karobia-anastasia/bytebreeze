@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ByteBreeze</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+ 
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">ByteBreeze</label>
+      <ul>
+        <li><a class="active" href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+      </ul>
+    </nav>
+
+
+    
+  <div class="Contact">
+    <div class="contact-title">
+    
+      <h1>Contact Us</h1>
+    </div>
+    <div class="row contact" style="background-color:  #011329">
+      <div class="col-sm-6 mb-3 mb-sm-0" style="background-color: #011329">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Get in touch with us about anything</h5>
+            <p class="card-text">EMAIL ADDRESS</p>
+            <h5>contact@bz.com</h5>
+            <br />
+            <p>PHONE</p>
+            <h5>Mobile: +254732039599</h5>
+            <br />
+            <p>HEAD OFFICE</p>
+            <h5>
+              Neque porro quisquam est qui dolorem ipsum 
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body contact-form">
+            <!-- <h5 class="card-title"></h5>
+              <p class="card-text"></p> -->
+            <form
+              action="https://formsubmit.co/1163e06c7a4fd191219102ae397bb44b"
+              method="POST"
+            >
+              <input type="text" placeholder="Your Name" />
+              <hr />
+              <input type="text" placeholder="Email Address" />
+              <hr />
+              <input type="text" placeholder="Phone Number" />
+              <hr />
+              <input type="text" placeholder="Message" id="message" />
+              <hr />
+              <center><button id="btn-send">SEND</button></center>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="footer">
+
+      <div class="row" style="margin-left: 10%; width:90%; margin-bottom: 5%; background-color: #1c2b3e;" >
+        <div class="col">
+          <h5></h5>
+          <p>Home</p>
+          <p>About</p>
+          <p>Services</p>
+          <p>Contact</p>
+          <p>FAQs</p>
+        </div>
+        <div class="col">
+          <h5> </h5>
+          <p>Home</p>
+          <p>About</p>
+          <p>Services</p>
+          <p>Contact</p>
+          <p>FAQs</p>
+        </div>
+        <div class="col">
+          <h5> </h5>
+          <p>Home</p>
+          <p>About</p>
+          <p>Services</p>
+          <p>Contact</p>
+          <p>FAQs</p>
+        </div>
+        <div class="col">
+          <h5> </h5>
+          <p>Home</p>
+          <p>About</p>
+          <p>Services</p>
+          <p>Contact</p>
+          <p>FAQs</p>
+        </div>
+
+    </div>
+    <p id="copyright" style="width: 90%; margin: 0 auto; ">Copyright @ Anastasia Karobia</p>
+
+  </div>
+
+
+
+
+
+  
+  <script>
+    // Apply animations when the content becomes visible
+    const cards = document.querySelectorAll('.card');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    cards.forEach(card => {
+        observer.observe(card);
+    });
+</script>
+  </body>
+</html>

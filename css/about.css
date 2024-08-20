@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+.company-profile .about-title h1{
+    margin-top: 10%;    
+    color: #a75711;
+       font-weight: 600;
+}
+.company-profile .row{
+    width: 95%;
+    margin: 0 auto; 
+    text-align: justify;
+}
